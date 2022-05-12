@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import Editor from "@monaco-editor/react";
-import Navbar from './Compiler.css';
+import Navbar from './CompilerNav';
 import Axios from 'axios';
 import spinner from '../../assets/spinner.png';
 import './Compiler.css'
-import Nav from '../../Navbar/Nav';
-function Compiler() {
+function App() {
 
   // State variable to set users source code
   const [userCode, setUserCode] = useState(``);
@@ -59,8 +58,6 @@ function Compiler() {
 
 
   return (
-    <>
-    <Nav/>
     <div className="home-container">
     <div className="home-container1">
       <div className="home-main">
@@ -68,6 +65,8 @@ function Compiler() {
         <Editor
             options={options}
             theme={userTheme}
+            height="calc(100vh - 50px)"
+            width="100%"
             language={userLang}
             defaultLanguage="python"
             defaultValue="# Enter your code here"
@@ -103,8 +102,7 @@ function Compiler() {
       </div>
     </div>
   </div>
-  </>
   )
 }
 
-export default Compiler;
+export default App;

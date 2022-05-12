@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './nav.css'
-import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import {BsFillCalendar2WeekFill} from 'react-icons/bs'
-import Compiler from '../components/Compiler/Compiler';
+import Compiler from '../components/Compiler/CompilerMain';
 
 const Nav = () => {
   const [activeNav, setActiveNav]=useState('#')
