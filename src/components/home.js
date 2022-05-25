@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Nav from '../Navbar/Nav';
 import Footer from '../Footer/Footer';
-import Compiler from './Compiler/Compiler';
 
 class Home extends Component{
     render(){

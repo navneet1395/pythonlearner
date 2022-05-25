@@ -1,0 +1,90 @@
+.a-container {
+    background-color: var(--color-white);
+    margin-top: 120px;
+    padding: 2rem;
+    position: center fixed;
+    height: 600px;
+    width: 1024px;
+    left: 128px;
+    top: 60px;
+    border-radius: 20px;
+}
+.a-a-container{
+    box-sizing: border-box;
+position: absolute;
+padding:  0.5rem 2rem ;
+width: 956px;
+height: 81px;
+border: 3px solid #394867;
+border-radius: 10px;
+margin-top: 2rem;
+display: flex;
+}
+.line{
+    position: relative ;
+    top: 140px;
+    width:300px;
+color: #394867;
+}
+.line-h{
+    margin: 0 !important;
+    position: absolute;
+    right: 13rem;
+    bottom: 11rem;
+}
+.a-b-container{
+    width: 234px;
+    margin-top: 10rem;
+
+    box-sizing: border-box;
+position: absolute;
+width: 956px;
+height: 348px;
+border: 1px solid #394867;
+border-radius: 10px;
+display: flex;
+}
+.option{
+    box-sizing: border-box;
+position: absolute;
+display: flex;
+width: 196px;
+height: 55px;
+right: 5px;
+border: 3px solid #394867;
+border-radius: 10px;
+}
+.a-m{
+    margin: 0 !important;
+}
+.a-b-l{
+    gap: 0.5rem;
+    margin: 10px 20px ;
+}
+.a-b-l-s{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem auto ;
+    margin: 10px;
+    justify-content: center;
+}
+.a-b-button{
+    background-color: #394867;
+    text-align: center;
+    color: aliceblue;
+    width: 207px;
+height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #394867;
+border-radius: 10px;
+
+}
+.a-b-comment{
+    box-sizing: border-box;
+width: 207px;
+height: 149px;
+border: 2px solid #394867;
+border-radius: 10px;
+}

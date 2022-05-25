@@ -15,8 +15,8 @@ const Nav = () => {
         </a>
       </Link>
 
-      <Link to="/contest">
-        <a onClick={()=> setActiveNav('#contest')} className={activeNav==='#contest' ? 'active' : ''}>Contest
+      <Link to="/assignment">
+        <a onClick={()=> setActiveNav('#Assignment')} className={activeNav==='#Assignment' ? 'active' : ''}>Assignment
         </a>
       </Link>
 

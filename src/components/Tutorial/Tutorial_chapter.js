@@ -7,14 +7,18 @@ import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 import './Tutorial_chapter.css'
 import Chapter_1 from './test.pdf'
+
+
+
 const Tutorial_chapter = (props) => {
   return (
+
     <div className='t-container'>
-    <h1>Tutorial</h1>
-    <div className='t-main'>
+      <h1>Tutorials</h1>
+      <div className='t-main'>
         <div className='t-list'>
           <List
-            // sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+            sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
             aria-label="contacts"
           >
             <ListItem disablePadding>
@@ -22,12 +26,12 @@ const Tutorial_chapter = (props) => {
                 <ListItemIcon>
                   <StarIcon />
                 </ListItemIcon>
-                <ListItemText primary="Chelsea Otakan" />
+                <ListItemText primary="Chapter 1" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
-                <ListItemText inset primary="Eric Hoffman" />
+                <ListItemText inset primary="Chapter 2" />
               </ListItemButton>
             </ListItem>
           </List>
@@ -37,7 +41,6 @@ const Tutorial_chapter = (props) => {
         </div>
       </div>
     </div>
-
   )
 }
 

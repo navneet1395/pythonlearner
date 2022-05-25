@@ -5,7 +5,8 @@ import Navbar from './CompilerNav';
 import Axios from 'axios';
 import spinner from '../../assets/spinner.png';
 import './Compiler.css'
-function App() {
+import CircularProgress from '@mui/material/CircularProgress';
+function Compiler() {
 
   // State variable to set users source code
   const [userCode, setUserCode] = useState(``);
@@ -32,40 +33,38 @@ function App() {
   const options = {
     fontSize: fontSize
   }
-    // Function to call the compile endpoint
-    function compile() {
-      setLoading(true);
-      if (userCode === ``) {
-        return
-      }
-  
-      // Post request to compile endpoint
-      Axios.post(`http://localhost:8000/compile`, {
-        code: userCode,
-        language: userLang,
-        input: userInput
-      }).then((res) => {
-        setUserOutput(res.data.output);
-      }).then(() => {
-        setLoading(false);
-      })
+  // Function to call the compile endpoint
+  function compile() {
+    setLoading(true);
+    if (userCode === ``) {
+      return
     }
-  
-    // Function to clear the output screen
-    function clearOutput() {
-      setUserOutput("");
-    }
+
+    // Post request to compile endpoint
+    Axios.post(`http://localhost:8000/compile`, {
+      code: userCode,
+      language: userLang,
+      input: userInput
+    }).then((res) => {
+      setUserOutput(res.data.output);
+    }).then(() => {
+      setLoading(false);
+    })
+  }
+
+  // Function to clear the output screen
+  function clearOutput() {
+    setUserOutput("");
+  }
 
 
   return (
-    <div className="home-container">
-    <div className="home-container1">
+    <div className='container'>
       <div className="home-main">
         <div className="home-top-container">
-        <Editor
+          <Editor
             options={options}
             theme={userTheme}
-            height="calc(100vh - 50px)"
             width="100%"
             language={userLang}
             defaultLanguage="python"
@@ -74,11 +73,11 @@ function App() {
           />
         </div>
         <div className="home-bottom-container">
-          
+
           <span className="home-text">Output:</span>
           {loading ? (
             <div className="spinner-box">
-              <img src={spinner} alt="Loading..." />
+              <CircularProgress />
             </div>
           ) : (
             <div className="output-box">
@@ -91,18 +90,17 @@ function App() {
           )}
         </div>
         <div className="home-navmain">
-        <Navbar
-        userTheme={userTheme} setUserTheme={setUserTheme}
-        fontSize={fontSize} setFontSize={setFontSize}
-      />
-        <button className="home-button run-btn" onClick={() => compile()}>
+          <Navbar
+            userTheme={userTheme} setUserTheme={setUserTheme}
+            fontSize={fontSize} setFontSize={setFontSize}
+          />
+          <button className="home-button run-btn" onClick={() => compile()}>
             Run
-          </button> 
+          </button>
         </div>
       </div>
     </div>
-  </div>
   )
 }
 
-export default App;
+export default Compiler;
