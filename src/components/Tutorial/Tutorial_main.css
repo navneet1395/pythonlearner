@@ -1,23 +1,40 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  .menu-item {
-    padding: 0 40px;
-    margin: 5px 10px;
-    user-select: none;
-    cursor: pointer;
-    border: none;
-  }
-  .menu-item-wrapper.active {
-    border: 1px blue solid;
-  }
-  .menu-item.active {
-    border: 1px green solid;
-  }
-  
-  .scroll-menu-arrow {
-    padding: 20px;
-    cursor: pointer;
-  }
-    
+.t-container{
+  background-color: var(--color-white);
+  margin-top: 120px;
+  position: center fixed;
+  height: 600px;
+  width: 1024px;
+  left: 128px;
+  top: 60px;
+  border-radius: 20px;
+  padding: 10px 20px;
+
+}
+.t{
+  display: flex;
+  margin: 20px 0;
+}
+.t-c-l{
+  box-sizing: border-box;
+  border-radius:10px ;
+  border: 1px solid #394867;
+  height: 500px;
+  width: 450px;
+  display: grid;
+    padding: 10px;
+
+}
+.t-button{
+  background-color: #394867;
+  text-align: center;
+  color: aliceblue;
+  width: 207px;
+height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #394867;
+border-radius: 10px;
+margin: 10px;
+position: relative;
+    left: 100px;
+}

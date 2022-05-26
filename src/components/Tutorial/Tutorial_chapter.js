@@ -7,40 +7,34 @@ import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 import './Tutorial_chapter.css'
 import Chapter_1 from './test.pdf'
+import { Link } from 'react-router-dom';
+import Nav from '../../Navbar/Nav';
+import Footer from '../../Footer/Footer';
 
 
 
 const Tutorial_chapter = (props) => {
   return (
-
+<>
+<Nav/>
     <div className='t-container'>
-      <h1>Tutorials</h1>
+      <h1>Chapter 1</h1>
       <div className='t-main'>
-        <div className='t-list'>
-          <List
-            sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-            aria-label="contacts"
-          >
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <StarIcon />
-                </ListItemIcon>
-                <ListItemText primary="Chapter 1" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText inset primary="Chapter 2" />
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </div>
-        <div classname='t-chapter'>
+        
           <iframe src={Chapter_1} title="Chapter 1" />
         </div>
+        <Link to="/tutorialchapter11">
+          <button className='tcc-button'>
+            <h2>{'Next >'}</h2>
+          </button></Link>
+        <Link to="/tutorialchapter11">
+          <button className='tcc-button'>
+            <h2>{'back <'}</h2>
+          </button></Link>
       </div>
-    </div>
+      <Footer/>
+      </>
+
   )
 }
 

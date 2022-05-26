@@ -6,6 +6,8 @@ import FAQs from './components/FAQ/FAQs';
 import CompilerMain from './components/Compiler/CompilerMain';
 import Tutorial_main from './components/Tutorial/Tutorial_main';
 import AssignmentMain from './components/Assignment/AssignmentMain';
+import Tutorial_chapter from './components/Tutorial/Tutorial_chapter';
+import TutContent11 from './components/Tutorial/TutContent11';
 class App extends Component {
   render() {
   
@@ -26,7 +28,8 @@ class App extends Component {
           <Route exact path='/compiler' element={< CompilerMain />}></Route>
           <Route exact path='/tutorial' element={< Tutorial_main />}></Route>
           <Route exact path='/assignment' element={< AssignmentMain />}></Route>
-          {/* <Route exact path='/contact' element={< Contact />}></Route> */}
+          <Route exact path='/tutorialchapter11' element={< TutContent11 />}></Route>
+          <Route exact path='/tutorial_chapter' element={< Tutorial_chapter />}></Route>
       </Routes>
     </Router>
     );

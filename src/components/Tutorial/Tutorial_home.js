@@ -1,91 +1,107 @@
-import React, { Component } from "react";
-import ScrollMenu from "react-horizontal-scroll-menu";
+// import React, { Component } from "react";
+// import ScrollMenu from "react-horizontal-scroll-menu";
 
-import "./Tutorial_main.css";
+// import "./Tutorial_home.css";
 
-// list of items
-const list = [
-  { name: "item1" },
-  { name: "item2" },
-  { name: "item3" },
-  { name: "item4" },
-  { name: "item5" },
-  { name: "item6" },
-  { name: "item7" },
-  { name: "item8" },
-  { name: "item9" },
-  { name: "item10" },
-  { name: "item11" },
-  { name: "item12" },
-  { name: "item13" },
-  { name: "item14" },
-  { name: "item15" },
-  { name: "item16" },
-  { name: "item17" },
-  { name: "item18" },
-  { name: "item19" },
-  { name: "item20" },
-  { name: "item21" },
-  { name: "item22" },
-  { name: "item23" },
-  { name: "item24" },
-  { name: "item25" }
-];
+// import React from 'react'
 
-// One item component
-// selected prop will be passed
-const MenuItem = ({ text, selected }) => {
-  return <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>;
-};
+// const Tutorial_home = () => {
+//   return (
+//        <div classsName="t-container">
+//      <div className='t-c-l'>
+//        <p>jdbfkjbaobdadjbdjlabjbsajkbd</p>
+//      </div>
+//      <div className='t-c-l'>
 
-// All items component
-// Important! add unique key
-export const Menu = (list, selected) =>
-  list.map(el => {
-    const { name } = el;
+//      </div>
+//    </div>
+//   )
+// }
 
-    return <MenuItem text={name} key={name} selected={selected} />;
-  });
+// export default Tutorial_home
+// // // list of items
+// // const list = [
+// //   { name: "item1" },
+// //   { name: "item2" },
+// //   { name: "item3" },
+// //   { name: "item4" },
+// //   { name: "item5" },
+// //   { name: "item6" },
+// //   { name: "item7" },
+// //   { name: "item8" },
+// //   { name: "item9" },
+// //   { name: "item10" },
+// //   { name: "item11" },
+// //   { name: "item12" },
+// //   { name: "item13" },
+// //   { name: "item14" },
+// //   { name: "item15" },
+// //   { name: "item16" },
+// //   { name: "item17" },
+// //   { name: "item18" },
+// //   { name: "item19" },
+// //   { name: "item20" },
+// //   { name: "item21" },
+// //   { name: "item22" },
+// //   { name: "item23" },
+// //   { name: "item24" },
+// //   { name: "item25" }
+// // ];
 
-const Arrow = ({ text, className }) => {
-  return <div className={className}>{text}</div>;
-};
+// // // One item component
+// // // selected prop will be passed
+// // const MenuItem = ({ text, selected }) => {
+// //   return <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>;
+// // };
 
-const ArrowLeft = Arrow({ text: "<", className: "arrow-prev" });
-const ArrowRight = Arrow({ text: ">", className: "arrow-next" });
+// // // All items component
+// // // Important! add unique key
+// // export const Menu = (list, selected) =>
+// //   list.map(el => {
+// //     const { name } = el;
 
-const selected = "item1";
+// //     return <MenuItem text={name} key={name} selected={selected} />;
+// //   });
 
-class Tutorial_home extends Component {
-  constructor(props) {
-    super(props);
-    // call it again if items count changes
-    this.menuItems = Menu(list, selected);
+// // const Arrow = ({ text, className }) => {
+// //   return <div className={className}>{text}</div>;
+// // };
 
-    this.state = { selected: false };
-  }
+// // const ArrowLeft = Arrow({ text: "<", className: "arrow-prev" });
+// // const ArrowRight = Arrow({ text: ">", className: "arrow-next" });
 
-  onSelect = key => {
-    this.setState({ selected: key });
-  };
+// // const selected = "item1";
 
-  render() {
-    const { selected } = this.state;
-    // Create menu from items
-    const menu = this.menuItems;
+// // class Tutorial_home extends Component {
+// //   constructor(props) {
+// //     super(props);
+// //     // call it again if items count changes
+// //     this.menuItems = Menu(list, selected);
 
-    return (
-      <div className="container">
-        <ScrollMenu
-          data={menu}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
-          selected={selected}
-          onSelect={this.onSelect}
-        />
-      </div>
-    );
-  }
-}
+// //     this.state = { selected: false };
+// //   }
 
-export default Tutorial_home;
+// //   onSelect = key => {
+// //     this.setState({ selected: key });
+// //   };
+
+// //   render() {
+// //     const { selected } = this.state;
+// //     // Create menu from items
+// //     const menu = this.menuItems;
+
+// //     return (
+// //       <div className="container">
+// //         <ScrollMenu
+// //           data={menu}
+// //           arrowLeft={ArrowLeft}
+// //           arrowRight={ArrowRight}
+// //           selected={selected}
+// //           onSelect={this.onSelect}
+// //         />
+// //       </div>
+// //     );
+// //   }
+// // }
+
+// // export default Tutorial_home;

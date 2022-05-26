@@ -3,7 +3,6 @@ import './nav.css'
 import { Link } from 'react-router-dom';
 
 import {BsFillCalendar2WeekFill} from 'react-icons/bs'
-import Compiler from '../components/Compiler/CompilerMain';
 
 const Nav = () => {
   const [activeNav, setActiveNav]=useState('#')

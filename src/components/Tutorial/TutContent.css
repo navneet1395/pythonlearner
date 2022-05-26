@@ -1,0 +1,36 @@
+.tc-container{
+    background-color: var(--color-white);
+    margin-top: 120px;
+    position: center fixed;
+    height: 600px;
+    width: 1024px;
+    left: 128px;
+    top: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-name{
+    display: inline-flex;
+    padding: 9px 30px;
+    gap: 10px;
+    margin: 5px;
+    border: 1px solid #394867;
+    border-radius: 10px;
+}
+.tc-button{
+
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    background: #394867;
+  border-radius: 10px;
+      width: 50px;
+      justify-content: center inline;
+      height: min-content;
+      margin: 0;
+  }
+  h3{
+      margin: 0;
+  }
