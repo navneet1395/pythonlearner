@@ -13,21 +13,21 @@ import Footer from '../../Footer/Footer';
 
 
 
-const Tutorial_chapter = (props) => {
+const Tutorial_chapter2 = (props) => {
   return (
 <>
 <Nav/>
     <div className='t-container'>
-      <h1>Chapter 1</h1>
+      <h1>Chapter 2</h1>
       <div className='t-main'>
         
-          <iframe src={Chapter_1} title="Chapter 1" />
+          <iframe src={Chapter_1} title="Chapter 2" />
         </div>
-        <Link to="/tutorial_chapter2">
+        <Link to="/tutorial_chapter3">
           <button className='tcc-button'>
             <h2>{'Next >'}</h2>
           </button></Link>
-        <Link to="/tutorial_chapter4">
+        <Link to="/tutorial_chapter1">
           <button className='tcc-button'>
             <h2>{'back <'}</h2>
           </button></Link>
@@ -38,4 +38,4 @@ const Tutorial_chapter = (props) => {
   )
 }
 
-export default Tutorial_chapter
+export default Tutorial_chapter2

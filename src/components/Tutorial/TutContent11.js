@@ -19,19 +19,19 @@ export default function TutContent11() {
         </div>
         <div className='c-name'>
           <h3> chapter 2 : 	Data handling</h3>
-          <Link to="/t-chapter1">
+          <Link to="/tutorial_chapter2">
           <button className='tc-button'>
             <h2>{'>'}</h2>
           </button></Link>
         </div><div className='c-name'>
           <h3> chapter 3 : 	Conditional and iterative statements</h3>
-          <Link to="/t-chapter1">
+          <Link to="/tutorial_chapter3">
           <button className='tc-button'>
             <h2>{'>'}</h2>
           </button></Link>
         </div><div className='c-name'>
           <h3> chapter 4 : 	String manipulation</h3>
-          <Link to="/t-chapter1">
+          <Link to="/tutorial_chapter3">
           <button className='tc-button'>
             <h2>{'>'}</h2>
           </button></Link>
