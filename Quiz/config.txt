@@ -1,0 +1,3 @@
+run npm install . in both main folder and frontend folder
+run npx nodemon server.js in current folder(means wherever you find server.js)
+run npm start in frontend folder 
