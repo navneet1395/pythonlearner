@@ -1,0 +1,17 @@
+
+  :root {
+    --main-color: #394867;
+    --secondary-color: #d7e3ef;
+    --main-color-hover: #7c9ddf;
+  }
+
+  
+  a {
+    
+    text-decoration: none;
+    color: var(--main-color);}
+  
+  a:hover {
+    color: var(--main-color-hover);
+  }
+  

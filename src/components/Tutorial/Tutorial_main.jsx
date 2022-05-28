@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Nav from '../../Navbar/Nav'
 import Footer from '../../Footer/Footer'
-import Tutorial_home from './Tutorial_home'
 import './Tutorial_main.css'
 function Tutorial_main (){
   return (

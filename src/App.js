@@ -14,6 +14,9 @@ import Tutorial_chapter4 from './components/Tutorial/tutorial_chapter4';
 
 
 import TutContent11 from './components/Tutorial/TutContent11';
+import Login from './components/Login/Login';
+import SignUp from './components/Login/SignUp';
+
 class App extends Component {
   render() {
   
@@ -36,11 +39,17 @@ class App extends Component {
           <Route exact path='/assignment' element={< AssignmentMain />}></Route>
           <Route exact path='/tutorialchapter11' element={< TutContent11 />}></Route>
           <Route exact path='/tutorial_chapter' element={< Tutorial_chapter />}></Route>
+<<<<<<< Updated upstream
           <Route exact path='/tutorial_chapter2' element={< Tutorial_chapter2 />}></Route>
           <Route exact path='/tutorial_chapter3' element={< Tutorial_chapter3 />}></Route>
           <Route exact path='/tutorial_chapter4' element={< Tutorial_chapter4 />}></Route>
 
 
+=======
+          <Route exact path='/login' element={< Login />}></Route>
+          <Route exact path='/signup' element={< SignUp />}></Route>
+          {/* <Redirect from="/" to="/signup" /> */}
+>>>>>>> Stashed changes
       </Routes>
     </Router>
     );

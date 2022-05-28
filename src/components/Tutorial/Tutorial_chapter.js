@@ -6,7 +6,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 import './Tutorial_chapter.css'
-import Chapter_1 from './test.pdf'
+import Chapter_1 from './chapter11/python ch1.pdf'
 import { Link } from 'react-router-dom';
 import Nav from '../../Navbar/Nav';
 import Footer from '../../Footer/Footer';
