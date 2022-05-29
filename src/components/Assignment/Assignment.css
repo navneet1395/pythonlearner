@@ -45,6 +45,7 @@ border-radius: 10px;
 display: flex;
 }
 .option{
+    padding: inherit;
     box-sizing: border-box;
 position: absolute;
 display: flex;

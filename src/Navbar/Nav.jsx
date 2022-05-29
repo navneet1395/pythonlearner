@@ -23,8 +23,13 @@ const Nav = () => {
         <a onClick={()=> setActiveNav('#experience')} className={activeNav==='#experience' ? 'active' : ''}>Tutorial</a>
       </Link>
 
-      <Link to="/calendar">
-        <a onClick={()=> setActiveNav('#experience')} className={activeNav==='#experience' ? 'active' : ''}><BsFillCalendar2WeekFill/>
+      <Link to="/quiz">
+        <a  onClick={()=> setActiveNav('#quiz')} className={activeNav==='#quiz' ? 'active' : ''}>Quiz
+        </a>
+      </Link>
+
+      <Link to="/contest">
+        <a onClick={()=> setActiveNav('#experience')} className={activeNav==='#experience' ? 'active' : ''}>Contest
         </a>
       </Link>
 
@@ -38,10 +43,10 @@ const Nav = () => {
         </a>
       </Link>
 
-      <Link to="/login">
+      {/* <Link to="/login">
         <a onClick={()=> setActiveNav('#testimonials')} className={activeNav==='#testimonials' ? 'active' : ''}>Log In
         </a>
-      </Link>
+      </Link> */}
 
     </nav>
    

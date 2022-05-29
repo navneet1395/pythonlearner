@@ -49,7 +49,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className={styles.sscontainer}>
     <div className={styles.container}>
       <form className={styles.formLogin} onSubmit={submitHandler} autoComplete="off">
         <h2>Login In</h2>
@@ -67,8 +67,10 @@ const Login = () => {
         </div>
 
         <div>
-        <Link to="/">
+        <Link to="/home">
           <button type="submit">Login</button></Link>
+          <Link to="/teacher">
+          <button type="submit">Goto teacher portal</button></Link>
           <span style={{ color: "#a29494", textAlign: "center", display: "inline-block", width: "100%" }}>
             Don't have a account? <Link to="/signup">Create account</Link>
           </span>

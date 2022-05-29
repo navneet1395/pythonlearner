@@ -59,7 +59,7 @@ function Compiler() {
 
 
   return (
-    <div className='container'>
+    <div className='c-container'>
       <div className="home-main">
         <div className="home-top-container">
           <Editor

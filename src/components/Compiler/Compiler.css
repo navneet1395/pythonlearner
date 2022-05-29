@@ -3,7 +3,15 @@
   position: absolute;
   border-radius: 20px;
 }
-.container{
+.c-container{
+  background-color: var(--color-white);
+  margin-top: 120px;
+  position: center fixed;
+  height: 600px;
+  width: 1024px;
+  left: 128px;
+  top: 60px;
+  border-radius: 20px;
   padding: 0 !important;
 }
 .home-top-container {
@@ -49,14 +57,14 @@
   display: inline-block;
 }
 
-.button {
+.co-button {
   background-color: #394867;
-  padding: 15px 32px;
+  padding: revert;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 4px 2px;
+  border-radius: 5px;
   cursor: pointer;
 }
 

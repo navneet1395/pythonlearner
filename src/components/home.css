@@ -1,0 +1,19 @@
+.h-container {
+    background-color: var(--color-white);
+    margin-top: 120px;
+    position: center fixed;
+    height: 600px;
+    width: 1024px;
+    left: 128px;
+    top: 60px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.h-a{
+    display: flex;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}

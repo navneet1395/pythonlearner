@@ -76,6 +76,7 @@ const SignUp = () => {
   };
 
   return (
+    <div className={styles.sscontainer}>
     <div className={styles.container}>
       <form className={styles.formLogin} onSubmit={submitHandler} autoComplete="off">
         <h2>Register</h2>
@@ -122,7 +123,7 @@ const SignUp = () => {
         </div>
       </form>
       <ToastContainer />
-    </div>
+    </div></div>
   );
 };
 

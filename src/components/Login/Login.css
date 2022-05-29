@@ -14,4 +14,17 @@
   a:hover {
     color: var(--main-color-hover);
   }
+  .sscontainer{
+    background-color: var(--color-white);
+    margin-top: 120px;
+    position: center fixed;
+    height: 600px;
+    width: 1024px;
+    left: 128px;
+    top: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
   

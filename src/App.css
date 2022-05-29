@@ -45,4 +45,7 @@ body {
     top: 60px;
     border-radius: 20px;
 }
-
+button{
+    background-color: #4768aa;
+    border-radius: 5px;
+}
